@@ -1,296 +1,61 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
 }
 
-/* ======= Header ======= */
+/* Header */
 header {
-    background: #0097B2;
-    width: 100%;
-    padding: 20px 40px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
+    background-color: #007bff;
 }
 
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+header .nav-link {
     color: white;
+    font-weight: 600;
 }
 
-nav ul {
-    display: flex;
-    gap: 40px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    align-items: center;
+.custom-card {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-nav ul li a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 50px;
+/* Formulário */
+#formulario-container {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Dica do Dia */
+#dica-do-dia {
+    text-align: center;
+}
+
+#texto-dica {
+    font-size: 1.2rem;
+}
+
+/* Favoritos */
+#favoritos-container .card {
+    width: 18rem;
+    border: 1px solid #ddd;
     transition: 0.3s;
 }
 
-nav ul li a:hover {
-    background-color: rgba(21, 21, 173, 0.315);
+#favoritos-container .card:hover {
+    transform: scale(1.05);
+    border-color: #007bff;
 }
 
-#cadastro-btn {
-    background: #D3D3D3;
-    color: #323232;
-    padding: 10px 20px;
-    font-weight: bold;
-    text-transform: uppercase;
+#google_translate_element {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 9999;
 }
 
-/* ======= Main ======= */
-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 80px;
-}
-
-.conteudo-esquerda {
-    width: 48%;
-}
-
-.titulo-projeto {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-#descricao-projeto {
-    font-size: 1.5rem;
-    max-width: 95%;
-    margin: 0 10px;
-    line-height: 1.6;
-    padding: 0 20px;
-    box-sizing: border-box;
-    word-wrap: break-word;
-}
-
-.abrir-formulario-btn {
-    background-color: #0097B2;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 10px 20px;
-}
-
-.abrir-formulario-btn:hover {
-    background-color: #007B8C;
-}
-
-.formulario-container {
-    margin-top: 20px;
-    display: none;
-}
-
-.formulario-container input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-.formulario-container button {
-    background-color: #0097B2;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.formulario-container button:hover {
-    background-color: #007B8C;
-}
-
-/* ======= Conteudo Direita (Imagem) ======= */
-.conteudo-direita {
-    width: 48%;
-}
-
-.conteudo-direita img {
-    width: 100%;
-    height: auto;
-    max-width: 519px;
-    max-height: 1216px;
-    object-fit: cover;
-}
-
-/* ======= Seção "O Projeto" ======= */
-#projeto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    padding: 0 10px;
-    text-align: center;
-}
-
-#titulo-projeto {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-#descricao-projeto {
-    font-size: 1.5rem;
-    max-width: 100%;
-    width: 100%;
-    margin: 0 auto;
-    line-height: 1.6;
-    white-space: normal;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-/* ======= Seção "Faça Parte" ======= */
-#faça-parte {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
-    padding: 20px;
-}
-
-#titulo-participe {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-#descricao-participe {
-    font-size: 1.5rem;
-    max-width: 800px;
-    line-height: 1.6;
-}
-
-/* ======= Rodapé ======= */
-.rodape {
-    background-color: #0097B2;
-    color: white;
-    padding: 40px 20px;
-    text-align: left;
-    width: 100%;
-}
-
-.container-rodape {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.logo-rodape {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.logo-footer {
-    width: 150px;
-}
-
-.links-coluna, .outros-links, .contato-icons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-}
-
-.links {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.links li a:hover {
-    color: rgba(21, 21, 173, 0.8);
-}
-
-.contato-icons {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
-
-.contato-icons .icon {
-    width: 40px;
-    height: 40px;
-}
-
-.contato-icons .icon img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-/* ======= Responsividade ======= */
-@media (max-width: 768px) {
-    main {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .conteudo-esquerda, .conteudo-direita {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .titulo-projeto {
-        font-size: 1.8rem;
-    }
-
-    .descricao-projeto {
-        font-size: 1rem;
-    }
+/* Rodapé */
+footer {
+    background-color: #212529;
 }

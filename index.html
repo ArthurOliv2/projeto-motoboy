@@ -3,108 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Conecte Motoboys e Empresas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <span class="logo">Minha logo</span>
+    <header class="bg-primary text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <span class="h4">Minha Logo</span>
             <nav>
-                <ul>
-                    <li><a href="#Inicio">Inicio</a></li>
-                    <li><a href="#projeto">O projeto</a></li>
-                    <li><a href="#faça-parte">Faça parte</a></li>
-                    <li><a href="#" id="cadastro-btn">Cadastre-se</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="#Inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#projeto">O Projeto</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#faça-parte">Faça Parte</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="conteudo-principal" id="Inicio">
-        <section class="conteudo-esquerda">
-            <h1 class="titulo-projeto">Conectando Empresas e Motoboys de Forma Simples e Eficiente</h1>
-    
-            <h3 class="descricao-projeto">Chega de depender de grupos de WhatsApp desorganizados! Nossa plataforma conecta empresas que precisam de entregas rápidas com motoboys disponíveis na região. De forma prática e sem burocracia, você encontra o profissional ideal para o seu serviço, garantindo agilidade, segurança e preços justos para ambos os lados.!</h3>
-    
-            <button id="abrirFormularioBtn" class="abrir-formulario-btn">Tem interesse em participar ?</button>
-    
-            <div id="formulario-container" class="formulario-container" style="display: none;">
-                <h3>Preencha seus dados:</h3>
-                <form id="formularioContato">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
-    
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-    
-                    <button type="submit">Enviar</button>
-                </form>
-            </div>
-        </section>
-    
-        <section class="conteudo-direita">
-            <img src="img/motoboy.png" alt="Imagem do projeto">
-        </section>
-    </main>
-    <section id="projeto">
-        <h1 id="titulo-projeto">O Projeto</h1>
-        <p id="descricao-projeto">Nos dias atuais, muitos motoboys e empresas dependem de grupos de WhatsApp para comunicação, o que, embora útil, apresenta diversos desafios. A falta de segurança, credibilidade e a dificuldade em gerenciar a comunicação de maneira eficiente geram problemas para todos os envolvidos. Nosso projeto tem como objetivo resolver essas questões ao oferecer uma plataforma dedicada, pensada especificamente para as necessidades dos motoboys e das empresas. Com ela, será possível conectar os motoboys de forma mais eficiente, trocar informações relevantes em tempo real e estabelecer uma comunicação mais organizada. A segurança será um dos pilares dessa plataforma, garantindo que todas as interações sejam protegidas, com maior transparência e confiabilidade. A comunicação entre motoboys e empresas será otimizada, tornando o processo de troca de informações mais ágil e seguro. Além disso, buscamos melhorar a experiência para todos, promovendo um ambiente que inspire confiança, profissionalismo e credibilidade, e que ajude a fortalecer o relacionamento entre motoboys e empresas. Esse projeto pretende revolucionar a forma como a comunicação acontece nesse setor, criando uma alternativa segura e eficiente aos métodos tradicionais.</p>
-     
-            
-    </section>
-    <section id="faça-parte">
-        <h1 id="titulo-participe">Faça Parte</h1>
-        <p id="descricao-participe">Junte-se a nós e faça a diferença! Nossa plataforma oferece uma maneira eficiente para motoboys se conectarem com empresas que precisam de entregas rápidas. Ao fazer parte dessa comunidade, você terá acesso a uma rede de oportunidades e poderá ampliar seu negócio sem depender de grupos de WhatsApp desorganizados.</p>
-    </section>
-    
 
-    <footer class="rodape">
-        <div class="container-rodape">
-            
-            <div class="logo-rodape">
-                <img src="sua-logo.png" alt="Logo" class="logo-footer">
+    <main class="container my-5" id="Inicio">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h1 class="mb-4">Conectando Empresas e Motoboys de Forma Simples e Eficiente</h1>
+                <p class="mb-4">Chega de depender de grupos de WhatsApp desorganizados! Nossa plataforma conecta empresas com motoboys disponíveis na região, garantindo agilidade, segurança e preços justos para ambos.</p>
+                <button id="abrirFormularioBtn" class="btn btn-primary">Tem interesse em participar?</button>
+
+                <div id="formulario-container" class="mt-4" style="display: none;">
+                    <h3>Preencha seus dados:</h3>
+                    <form id="formularioContato">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome:</label>
+                            <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail:</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Enviar</button>
+                    </form>
+                </div>
             </div>
-            
-            <div class="links-coluna">
-                <ul class="links">
-                    <li><a href="#Inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </div>
-    
-            <div class="outros-links">
-                <ul class="links">
-                    <li><a href="#suporte">Suporte</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#politica">Política de Privacidade</a></li>
-                </ul>
-            </div>
-    
-            <div class="contato-icons">
-                <a href="https://www.instagram.com" target="_blank" class="icon instagram">
-                    <img src="instagram-icon.png" alt="Instagram">
-                </a>
-                <a href="https://www.whatsapp.com" target="_blank" class="icon instagram">
-                    <img src="whatsapp-icon.png" alt="whatsapp">
-                </a>
+
+            <div class="col-md-6 text-center">
+                <img src="img/motoboy.png" alt="Imagem do projeto" class="img-fluid">
             </div>
         </div>
+    </main>
+
+    <div class="container my-5 d-flex flex-column gap-4 align-items-center">
+        <div id="projeto" class="card custom-card">
+            <div class="card-body">
+                <h2 class="card-title">O Projeto</h2>
+                <p>Nos dias atuais, motoboys e empresas enfrentam desafios com a comunicação em grupos de whatsapp. Nosso projeto propõe uma plataforma dedicada, promovendo segurança, agilidade e organização na comunicação entre entregadores e contratantes.
+                </p>
+            </div>
+        </div>
+
+        <div id="faça-parte" class="card custom-card">
+            <div class="card-body">
+                <h2 class="card-title">Faça Parte</h2>
+                <p>Junte-se à nossa comunidade e tenha acesso a novas oportunidades de trabalho de forma prática e organizada!
+                </p>   
+                
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <section class="container my-5" id="dica-do-dia">
+        <h2>Dica do Dia</h2>
+        <div class="alert alert-info" id="texto-dica">Carregando dica...</div>
+        <button class="btn btn-warning mt-3" onclick="favoritarDica(document.getElementById('texto-dica').textContent)">Favoritar esta dica</button>
+    </section>
+
+    <section class="container my-5" id="favoritos">
+        <h2>Favoritos</h2>
+        <div id="favoritos-container" class="d-flex flex-wrap gap-3"></div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>© 2025 - Conectando Empresas e Motoboys</p>
+        </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pagelanguage: 'en',
+            includedLanguages: 'pt,en',
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element')
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+    </script>
+    <script src="script.js"></script>
 </body>
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "kZ-RV0S5qRiXROPCI",
-      });
-   })();
-</script>
-<script src="script.js"></script>
-</html>
+</html>   
+    
